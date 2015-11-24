@@ -1,0 +1,4 @@
+name: Fuck You Hard
+markdown: redcarpet
+highlighter: none
+exclude: ["node_modules", "gulpfile.js", "package.json"]
