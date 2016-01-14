@@ -1,0 +1,91 @@
+.home-wrap
+	display: flex
+	min-height: 100vh
+
+	@media (max-width: 775px)
+		display: block
+
+.home-sections
+	flex: 1
+
+	section
+		padding: 2em 0
+
+
+
+	// Flex classes
+	.flex
+		display: flex
+		flex-direction: row
+
+	.flex--center
+		justify-content: center
+
+	.flex--space-around
+		justify-content: space-around
+
+	.order-first
+		order: -1
+
+
+
+// columns
+.col-1
+	max-width: 300px
+	margin: 0 10px
+
+
+.col-2
+	max-width: 620px
+	margin: 0 10px
+
+
+.col-50
+	width: 50%
+
+.push-left
+	margin-right: 330px
+
+
+//Typography
+.home-lead
+	font-size: 36px
+
+	&.outdented
+		text-indent: -0.7em
+
+		@media (max-width: 640px)
+			text-indent: 0
+
+
+
+@media (max-width: 640px)
+	.home-sections .flex
+		display: block
+
+	.col-1
+		max-width: 100%
+
+	.home-cta
+		max-width: 65%
+		margin: 0 auto
+
+	.col-50
+		width: auto
+
+	.push-left
+		max-width: 300px
+		margin-left: 60px
+		margin-right: auto
+
+	section#about
+		padding-top: 0
+		h2
+			width: 300px
+
+	p
+		text-align: center
+
+	section#tumblr
+		.home-cta
+			max-width: 85%

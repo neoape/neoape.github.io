@@ -1,0 +1,22 @@
+mixin nav-content()
+	ul
+		li: a(href="#about") About
+		li: a(href="#tumblr") Tumblr
+		li: a(href="#mentoring") Mentoring
+		li: a(href="#articles") Articles
+		li: a(href="#contact") Contact
+
+
+.mobile-nav
+	+nav-content()
+
+header
+	.header-position
+		h1.logo Anarchy
+
+		nav.site-nav
+			+nav-content()
+
+		a(href="mailto:alina.pequena@mail.ru").email-link +email me
+
+		.mobile-nav-toggle: span

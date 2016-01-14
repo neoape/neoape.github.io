@@ -1,0 +1,70 @@
+section#mentoring
+	background:
+		image: url(../img/mentoring-bg.jpg)
+		size: cover
+		position: bottom
+		repeat: no-repeat
+	color: white
+	overflow: hidden
+
+	.home-cta
+		color: #6f3331
+
+	p
+		margin-top: 3em
+		margin-bottom: 1.5em
+
+
+	.col-1:nth-child(2)
+		width: 300px
+
+	div.flex
+		height: 420px
+
+	.parent
+		position: relative
+	.image
+		position: absolute
+		background:
+			image: url(../img/phone.png)
+			repeat: no-repeat
+			size: cover
+		width: 570px
+		height: 420px
+		top: 20%
+		left: 5%
+		animation-duration: 2s
+ 		animation-fill-mode: both
+		animation-iteration-count: infinite
+		animation-name: swing
+		transform-origin: center
+
+
+@keyframes swing
+  20%
+    -webkit-transform: rotate3d(0, 0, 1, 15deg)
+    transform: rotate3d(0, 0, 1, 5deg)
+
+
+  40%
+    -webkit-transform: rotate3d(0, 0, 1, -10deg)
+    transform: rotate3d(0, 0, 1, -8deg)
+
+
+  60%
+    -webkit-transform: rotate3d(0, 0, 1, 5deg)
+    transform: rotate3d(0, 0, 1, 5deg)
+
+
+  80%
+    -webkit-transform: rotate3d(0, 0, 1, -5deg)
+    transform: rotate3d(0, 0, 1, -5deg)
+
+
+  to
+    -webkit-transform: rotate3d(0, 0, 1, 0deg)
+    transform: rotate3d(0, 0, 1, 0deg)
+
+
+		//@media (max-width: 640px)
+			height: 300px
